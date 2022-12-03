@@ -1,0 +1,46 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  transition: 10s, visibility 1s;
+  z-index: 100;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  -webkit-animation: loading 1s ease infinite;
+          animation: loading 1s ease infinite;
+}
+
+@-webkit-keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}/*# sourceMappingURL=aniamtion.css.map */
