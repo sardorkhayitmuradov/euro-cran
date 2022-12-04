@@ -49,7 +49,7 @@
 
 /*--- Arenda -----*/
 .arenda {
-  background: #F3F3F3;
+  background: #f3f3f3;
 }
 
 .arenda__row__col2 {
@@ -88,4 +88,36 @@
   .arenda__row__col2 img {
     width: 100%;
   }
+}
+/*--- Texnika ----*/
+.texnika__col6 img {
+  transform: translate(0, 50px);
+}
+
+@media screen and (max-width: 1200px) {
+  .texnika__col6 img {
+    width: 100%;
+  }
+}
+/*---- Nadejno -----*/
+.nadejno {
+  padding-top: 130px;
+  background-color: #f3f3f3;
+}
+.nadejno .col-nadejno1 h1 {
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 141.69%;
+  color: #424242;
+}
+
+@media screen and (max-width: 380px) {
+  .col-nadejno2 {
+    flex-wrap: wrap;
+  }
+}
+/*----proyect----*/
+.eurocran {
+  padding-top: 120px;
 }/*# sourceMappingURL=index.css.map */
