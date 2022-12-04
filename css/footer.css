@@ -70,6 +70,13 @@ h4 {
   color: #ffffff;
 }
 
+.footer__logo span {
+  font-size: 10px;
+  line-height: 160%;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #b5b5b5;
+}
+
 .footer__tarmoqlar a {
   color: #000;
   font-weight: 700;
@@ -77,4 +84,10 @@ h4 {
   padding: 11px 22px;
   border: 1px solid #ffffff;
   background: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=footer.css.map */
