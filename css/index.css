@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../_global.scss);
 .loader {
   position: fixed;
@@ -44,4 +45,47 @@
 .loader--hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+/*--- Arenda -----*/
+.arenda {
+  background: #F3F3F3;
+}
+
+.arenda__row__col2 {
+  height: 600px;
+  background: url(../../images/index.imgs/Изображение.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.arenda__row__col1 {
+  height: 600px;
+  background: url(../../images/index.imgs/фон\ для\ оффера.png);
+  background-repeat: no-repeat;
+  padding-top: 104px;
+  padding-left: 160px;
+}
+
+.hr {
+  margin-bottom: 30px;
+  width: 264px;
+  height: 5px;
+  background: #fcb427;
+}
+
+.arenda__row__col2 img {
+  padding-top: 460px;
+}
+
+@media screen and (max-width: 600px) {
+  .arenda__row__col1 {
+    padding: 50px;
+  }
+  .arenda__row__col1 .hr {
+    width: 100%;
+  }
+  .arenda__row__col2 img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */
