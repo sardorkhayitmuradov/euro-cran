@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url(../_global.scss);
+.owl-theme .owl-nav {
+  display: none;
+}
+
 .loader {
   position: fixed;
   top: 0;
@@ -120,4 +124,21 @@
 /*----proyect----*/
 .eurocran {
   padding-top: 120px;
+}
+
+.katalog {
+  background: #e5e5e5;
+}
+
+.item__hr {
+  width: 250px;
+  border: 1px solid rgba(252, 209, 39, 0.5);
+  background-color: rgba(252, 209, 39, 0.5);
+}
+
+.owl__carusel button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,4 +1,7 @@
 @import url(../_global.scss);
+.owl-theme .owl-nav{
+  display: none;
+}
 .loader {
   position: fixed;
   top: 0;
@@ -95,7 +98,7 @@
   background-color: #f3f3f3;
   .col-nadejno1 {
     h1 {
-        padding-bottom: 50px;
+      padding-bottom: 50px;
       font-weight: 700;
       font-size: 40px;
       line-height: 141.69%;
@@ -103,14 +106,28 @@
     }
   }
 }
-@media screen and (max-width:380px) {
-    .col-nadejno2 {
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 380px) {
+  .col-nadejno2 {
+    flex-wrap: wrap;
+  }
 }
 
 /*----proyect----*/
 .eurocran {
-    padding-top: 120px;
+  padding-top: 120px;
 }
 
+.katalog {
+  background: #e5e5e5;
+}
+.item__hr {
+  width: 250px;
+  border: 1px solid rgba(252, 209, 39, 0.5);
+  background-color:  rgba(252, 209, 39, 0.5);
+}
+.owl__carusel button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
