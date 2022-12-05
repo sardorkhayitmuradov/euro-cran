@@ -29,3 +29,77 @@
     opacity: 0;
     visibility: hidden;
 }
+main {
+    background: #E5E5E5;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.main {
+    width: 1400px;
+    max-width: 100%;
+    gap: 30px;
+    margin-bottom: 42px;
+}
+.blog {
+    text-align: left;
+    width: 370px;
+    height: 690px;
+    background-color: white;
+    #more {
+        position: relative;
+        background-color: #FCB427;
+        padding: 12px 62px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 141.69%;
+        color: #FFFFFF;        
+        margin-left: 32px;
+    }
+}
+.title {
+    margin: 16px 0 20px 30px;    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 142.19%;    
+    width: 288px;
+}
+.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156.69%;
+    margin-left: 30px;
+    width: 288px;
+    margin-bottom: 32px;
+}
+.txt {
+    padding-top: 36px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 156.69%;
+}
+h1 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 141.69%;
+    margin: 53px 0;
+}
+.mainlink {    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 141.69%;
+    color: #2D2D2D;
+    padding: 12px 52px;
+    border: 2px solid #FCB427;
+    text-align: center;
+    transform: translateX(-80px);   
+}
+.dom {
+    padding-bottom: 102px;
+}
+.flexa {
+    display: flex;
+    justify-content: center;
+}
