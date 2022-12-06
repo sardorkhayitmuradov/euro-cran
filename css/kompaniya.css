@@ -1,0 +1,289 @@
+@charset "UTF-8";
+@import url(../_global.scss);
+body {
+  overflow-x: hidden;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  transition: 10s, visibility 1s;
+  z-index: 100;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  -webkit-animation: loading 1s ease infinite;
+          animation: loading 1s ease infinite;
+}
+
+@-webkit-keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.glavniy {
+  position: relative;
+  top: 20px;
+  width: 148px;
+  height: 19px;
+}
+
+.glavniy__glav :hover {
+  color: blue;
+}
+
+.glavniy__kompony {
+  font-size: 21px;
+  position: relative;
+  left: 10px;
+  bottom: 4px;
+}
+
+.glavniy__kompony :hover {
+  color: blue;
+}
+
+.yevrokran {
+  margin-bottom: 70px;
+}
+
+.section__container {
+  height: 674px;
+  margin-top: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  .section__container {
+    margin-bottom: 500px;
+  }
+}
+.kran {
+  width: 783px;
+  height: 542px;
+}
+
+@media only screen and (min-width: 500px) {
+  .kran {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.global__section {
+  background-color: whitesmoke;
+}
+
+.home__section {
+  height: 1113px;
+}
+
+.box {
+  width: 369px;
+  height: 325px;
+  border-radius: 10px;
+  background-color: #FCB427;
+}
+
+.box:hover {
+  height: 408px;
+  transition: 0.7s;
+}
+
+.box h5 {
+  color: white;
+  margin-top: 15px;
+}
+
+.uslugi {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.modal-content {
+  width: 800px;
+  height: 500px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  position: relative;
+  bottom: 300px;
+  left: 350px;
+}
+
+.karusel__container {
+  height: 1113px;
+  background-color: whitesmoke;
+}
+
+.karusel__klent {
+  padding-top: 100px;
+  font-size: 40px;
+}
+
+.fact__section {
+  height: 529px;
+  background-image: url(/image/kompaniya/Полосы.png);
+  background-color: #2D2D2D;
+}
+
+@media only screen and (max-width: 600px) {
+  .fact__section {
+    height: 1060px;
+  }
+  .text__section {
+    height: 2000px;
+    margin-bottom: 500px;
+  }
+  .kontact {
+    margin-bottom: 600px;
+  }
+  .karusel__container {
+    margin-bottom: 400px;
+  }
+}
+.fact__section .row h2 {
+  font-size: 64px;
+}
+
+.fact__section__nas {
+  padding-top: 80px;
+  font-size: 40px;
+}
+
+.fact__section .row h3 {
+  font-size: 28px;
+}
+
+.fact__section .row p {
+  color: whitesmoke;
+}
+
+.pastroq {
+  padding-top: 50px;
+}
+
+.text__section {
+  height: 1223px;
+  background-color: whitesmoke;
+}
+
+.containe__zagalok {
+  height: 1067px;
+}
+
+.bigger__text {
+  line-height: 25px;
+  color: #2D2D2D;
+  padding-top: 80px;
+}
+
+.joy__ochish {
+  padding-bottom: 70px;
+}
+
+.kontact {
+  height: 570px;
+}
+
+.admin__ism {
+  width: 470px;
+  height: 50px;
+  background-color: #F9F9F9;
+  margin-bottom: 30px;
+}
+
+.admin__email {
+  width: 223px;
+  height: 50px;
+  background-color: #F9F9F9;
+  margin-bottom: 30px;
+  margin-right: 18px;
+}
+
+.admin__tel {
+  width: 223px;
+  height: 50px;
+  background-color: #F9F9F9;
+}
+
+.admin__matn {
+  width: 470px;
+  height: 139px;
+  background-color: #F9F9F9;
+  margin-bottom: 30px;
+}
+
+.admin__chek {
+  width: 18px;
+  height: 18px;
+  background-color: #F9F9F9;
+  margin-bottom: 30px;
+}
+
+.admin__submit {
+  width: 470px;
+  height: 50px;
+  border: none;
+  background-color: #FCB427;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.row__kompany {
+  position: relative;
+  left: 50px;
+  bottom: 50px;
+}
+
+.row__bulvar {
+  position: relative;
+  left: 40px;
+  bottom: 40px;
+}
+
+.col__yandex {
+  position: relative;
+  bottom: 25px;
+}
+
+.karta {
+  margin-top: 150px;
+}/*# sourceMappingURL=kompaniya.css.map */
