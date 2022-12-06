@@ -44,4 +44,158 @@
 .loader--hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+#texnik {
+  background: #f3f3f3;
+}
+#texnik #texnik_hero {
+  padding-bottom: 50px;
+}
+#texnik #texnik_hero .texnik_hero_title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 141.69%;
+  color: #2d2d2d;
+  padding: 50px 0;
+}
+#texnik #texnik_hero .hero_left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+#texnik #texnik_hero .hero_right table {
+  width: 80%;
+}
+#texnik #texnik_hero .hero_right table td {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 156.69%;
+  color: #2d2d2d;
+  padding: 10px 0;
+}
+#texnik #texnik_hero .hero_right table th {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 156.69%;
+  color: #000000;
+  padding-top: 10px;
+}
+#texnik #texnik_hero .hero_right button {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 141.69%;
+  color: #ffffff;
+  background: #fcb427;
+  padding: 12px 70px;
+  border: none;
+}
+#texnik #texnik_hero .hero_right button:hover {
+  background: #fec44e;
+  color: #ffffff;
+}
+@media screen and (max-width: 991px) {
+  #texnik #texnik_hero table {
+    display: none;
+  }
+  #texnik #texnik_hero button {
+    margin: 0 auto;
+  }
+  #texnik #texnik_hero .hero_left {
+    gap: 10px;
+  }
+}
+#texnik #texnik_second {
+  padding-bottom: 80px;
+}
+#texnik #texnik_second .navba a {
+  padding: 10px 30px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156.69%;
+  color: #2d2d2d;
+}
+#texnik #texnik_second .navba a:hover {
+  font-weight: 700;
+  border-bottom: 2px solid #ffbf1d;
+}
+#texnik #texnik_second .text h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 141.69%;
+  color: #2d2d2d;
+  padding: 50px 0 30px;
+}
+#texnik #texnik_second .text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156.69%;
+  color: #2d2d2d;
+}
+#texnik #texnik_second .img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#texnik #texnik_second .text2 h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 141.69%;
+  color: #2d2d2d;
+  padding: 50px 0 30px;
+}
+#texnik #texnik_second .text2 p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156.69%;
+  color: #2d2d2d;
+}
+@media screen and (max-width: 991px) {
+  #texnik #texnik_second .img img {
+    width: 100%;
+  }
+}
+#texnik #texnik_third .color_full {
+  height: 20px;
+  background: #fcb427;
+  border-radius: 0px;
+}
+#texnik #texnik_third .texnik_form .form {
+  display: flex;
+  justify-content: space-between;
+}
+#texnik table {
+  margin-top: 40px;
+  width: 60%;
+}
+#texnik table td {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 156.69%;
+  color: #2d2d2d;
+  padding: 10px 0;
+}
+#texnik table th {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 156.69%;
+  color: #000000;
+  padding-top: 10px;
+}
+#texnik button {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 141.69%;
+  color: #ffffff;
+  background: #fcb427;
+  padding: 12px 70px;
+  border: none;
+}
+#texnik button:hover {
+  background: #fec44e;
+  color: #ffffff;
 }/*# sourceMappingURL=texnika.css.map */

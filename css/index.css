@@ -1,4 +1,9 @@
+@charset "UTF-8";
 @import url(../_global.scss);
+.owl-theme .owl-nav {
+  display: none;
+}
+
 .loader {
   position: fixed;
   top: 0;
@@ -44,4 +49,99 @@
 .loader--hidden {
   opacity: 0;
   visibility: hidden;
+<<<<<<< HEAD
+=======
+}
+
+/*--- Arenda -----*/
+.arenda {
+  background: #f3f3f3;
+}
+
+.arenda__row__col2 {
+  height: 600px;
+  background: url(../../images/index.imgs/Изображение.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.arenda__row__col1 {
+  height: 600px;
+  background: url(../../images/index.imgs/фон\ для\ оффера.png);
+  background-repeat: no-repeat;
+  padding-top: 104px;
+  padding-left: 160px;
+}
+
+.hr {
+  margin-bottom: 30px;
+  width: 264px;
+  height: 5px;
+  background: #fcb427;
+}
+
+.arenda__row__col2 img {
+  padding-top: 460px;
+}
+
+@media screen and (max-width: 600px) {
+  .arenda__row__col1 {
+    padding: 50px;
+  }
+  .arenda__row__col1 .hr {
+    width: 100%;
+  }
+  .arenda__row__col2 img {
+    width: 100%;
+  }
+}
+/*--- Texnika ----*/
+.texnika__col6 img {
+  transform: translate(0, 50px);
+}
+
+@media screen and (max-width: 1200px) {
+  .texnika__col6 img {
+    width: 100%;
+  }
+}
+/*---- Nadejno -----*/
+.nadejno {
+  padding-top: 130px;
+  background-color: #f3f3f3;
+}
+.nadejno .col-nadejno1 h1 {
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 141.69%;
+  color: #424242;
+}
+
+@media screen and (max-width: 380px) {
+  .col-nadejno2 {
+    flex-wrap: wrap;
+  }
+}
+/*----proyect----*/
+.eurocran {
+  padding-top: 120px;
+}
+
+.katalog {
+  background: #e5e5e5;
+}
+
+.item__hr {
+  width: 250px;
+  border: 1px solid rgba(252, 209, 39, 0.5);
+  background-color: rgba(252, 209, 39, 0.5);
+}
+
+.owl__carusel button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+>>>>>>> bf0667660aabbc6a74ff8664145ccc6c105ce59d
 }/*# sourceMappingURL=index.css.map */

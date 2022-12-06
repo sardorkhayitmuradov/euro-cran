@@ -49,6 +49,7 @@ body {
 .loader--hidden {
   opacity: 0;
   visibility: hidden;
+<<<<<<< HEAD
 }
 
 a {
@@ -286,4 +287,6 @@ a {
 
 .karta {
   margin-top: 150px;
+=======
+>>>>>>> bf0667660aabbc6a74ff8664145ccc6c105ce59d
 }/*# sourceMappingURL=kompaniya.css.map */

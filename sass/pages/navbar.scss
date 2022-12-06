@@ -1,31 +1,90 @@
 @import url(../_global.scss);
+
 .loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #000;
-    transition:  10s, visibility 1s;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  transition: 10s, visibility 1s;
+  z-index: 100;
 }
 .loader::after {
-    content: "";
-    width: 75px;
-    height: 75px;
-    border: 15px solid #dddddd;
-    border-top-color: #009578;
-    border-radius: 50%;
-    animation: loading 1s ease infinite;
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
 }
 @keyframes loading {
-    from { transform: rotate(0turn); }
-    to { transform: rotate(1turn); }
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }
 .loader--hidden {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
+.form-control:focus {
+  color: #212529;
+  background-color: #f3f3f3;
+  border: 1px solid rgba(45, 45, 45, 0.585);
+  outline: 0;
+  box-shadow: none;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 3px 50px 0px 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #f3f3f3;
+  background-clip: padding-box;
+  border: 1px solid rgba(45, 45, 45, 0.6);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+header {
+  background: #2d2d2d;
+}
+.head__btn {
+    padding: 8px 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 141.69%;
+  border: 1px solid #ffbf1d;
+  a {
+    text-decoration: none;
+  }
+}
+.navbar {
+  background: #f3f3f3;
+}
+@media screen and (max-width:1200px) {
+    .head {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:770px) {
+    .head__info {
+        display: none;
+    }
+    .head__btn{
+        display: none;
+    }
+}
+

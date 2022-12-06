@@ -1,31 +1,207 @@
 @import url(../_global.scss);
 .loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #000;
-    transition:  10s, visibility 1s;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  transition: 10s, visibility 1s;
+  z-index: 100;
 }
 .loader::after {
-    content: "";
-    width: 75px;
-    height: 75px;
-    border: 15px solid #dddddd;
-    border-top-color: #009578;
-    border-radius: 50%;
-    animation: loading 1s ease infinite;
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
 }
 @keyframes loading {
-    from { transform: rotate(0turn); }
-    to { transform: rotate(1turn); }
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }
 .loader--hidden {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+#texnik {
+  background: #f3f3f3;
+  #texnik_hero {
+    padding-bottom: 50px;
+    .texnik_hero_title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 141.69%;
+      color: #2d2d2d;
+      padding: 50px 0;
+    }
+    .hero_left {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .hero_right {
+      table {
+        width: 80%;
+
+        td {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 156.69%;
+          color: #2d2d2d;
+          padding: 10px 0;
+        }
+        th {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 156.69%;
+          color: #000000;
+          padding-top: 10px;
+        }
+      }
+      button {
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 141.69%;
+        color: #ffffff;
+        background: #fcb427;
+        padding: 12px 70px;
+        border: none;
+        &:hover {
+          background: #fec44e;
+          color: #ffffff;
+        }
+      }
+    }
+    @media screen and(max-width: 991px) {
+      table {
+        display: none;
+      }
+      button {
+        margin: 0 auto;
+      }
+      .hero_left {
+        gap: 10px;
+      }
+    }
+  }
+  #texnik_second {
+    padding-bottom: 80px;
+    .navba {
+      a {
+        padding: 10px 30px;
+        padding-bottom: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 156.69%;
+        color: #2d2d2d;
+        &:hover {
+          font-weight: 700;
+          border-bottom: 2px solid #ffbf1d;
+        }
+      }
+    }
+    .text {
+      h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 141.69%;
+        color: #2d2d2d;
+        padding: 50px 0 30px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 156.69%;
+        color: #2d2d2d;
+      }
+    }
+    .img {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      img {
+        // width: 30%;
+      }
+    }
+    .text2 {
+      h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 141.69%;
+        color: #2d2d2d;
+        padding: 50px 0 30px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 156.69%;
+        color: #2d2d2d;
+      }
+    }
+    @media screen and(max-width: 991px) {
+      .img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  #texnik_third {
+    .color_full {
+      height: 20px;
+      background: #fcb427;
+      border-radius: 0px;
+    }
+    .texnik_form {
+      .form {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  table {
+    margin-top: 40px;
+    width: 60%;
+
+    td {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 156.69%;
+      color: #2d2d2d;
+      padding: 10px 0;
+    }
+    th {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 156.69%;
+      color: #000000;
+      padding-top: 10px;
+    }
+  }
+  button {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 141.69%;
+    color: #ffffff;
+    background: #fcb427;
+    padding: 12px 70px;
+    border: none;
+    &:hover {
+      background: #fec44e;
+      color: #ffffff;
+    }
+  }
 }
